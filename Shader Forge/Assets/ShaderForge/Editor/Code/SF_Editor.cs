@@ -521,6 +521,7 @@ namespace ShaderForge
             this.initialized = true;
             this.ps = ScriptableObject.CreateInstance<SF_PassSettings>().Initialize(this);
             this.shaderEvaluator = new SF_Evaluator(this);
+            if (preview != null) preview.OnDisable();
             this.preview = new SF_PreviewWindow(this);
             this.statusBox = new SF_StatusBox( /*this*/ );
             statusBox.Initialize(this);

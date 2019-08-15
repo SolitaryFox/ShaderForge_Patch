@@ -123,9 +123,9 @@ Shader "Shader Forge/Examples/TessellationDisplacement" {
                     return o;
                 }
                 void displacement (inout VertexInput v){
-                    float4 node_21 = _Time;
+                    float4 node_6981 = _Time;
                     float2 node_6 = (v.texcoord0*2.0);
-                    float2 node_161 = (node_6+node_21.g*float2(0.4,0));
+                    float2 node_161 = (node_6+node_6981.g*float2(0.4,0));
                     float node_15 = 1.0;
                     float4 _DisplacementR_var = tex2Dlod(_DisplacementR,float4(TRANSFORM_TEX(node_161, _DisplacementR),0.0,node_15));
                     float4 node_803 = tex2Dlod(_AORGBHeightA,float4(TRANSFORM_TEX(node_6, _AORGBHeightA),0.0,node_15));
@@ -178,8 +178,8 @@ Shader "Shader Forge/Examples/TessellationDisplacement" {
                 float3 _Normals_var = UnpackNormal(tex2D(_Normals,TRANSFORM_TEX(node_6, _Normals)));
                 float node_15 = 1.0;
                 float4 node_803 = tex2Dlod(_AORGBHeightA,float4(TRANSFORM_TEX(node_6, _AORGBHeightA),0.0,node_15));
-                float4 node_21 = _Time;
-                float2 node_161 = (node_6+node_21.g*float2(0.4,0));
+                float4 node_6981 = _Time;
+                float2 node_161 = (node_6+node_6981.g*float2(0.4,0));
                 float4 _DisplacementR_var = tex2Dlod(_DisplacementR,float4(TRANSFORM_TEX(node_161, _DisplacementR),0.0,node_15));
                 float node_156 = saturate((node_803.a-_DisplacementR_var.r));
                 float3 normalLocal = normalize(lerp(float3(0,0,1),_Normals_var.rgb,node_156));
@@ -362,9 +362,9 @@ Shader "Shader Forge/Examples/TessellationDisplacement" {
                     return o;
                 }
                 void displacement (inout VertexInput v){
-                    float4 node_2942 = _Time;
+                    float4 node_322 = _Time;
                     float2 node_6 = (v.texcoord0*2.0);
-                    float2 node_161 = (node_6+node_2942.g*float2(0.4,0));
+                    float2 node_161 = (node_6+node_322.g*float2(0.4,0));
                     float node_15 = 1.0;
                     float4 _DisplacementR_var = tex2Dlod(_DisplacementR,float4(TRANSFORM_TEX(node_161, _DisplacementR),0.0,node_15));
                     float4 node_803 = tex2Dlod(_AORGBHeightA,float4(TRANSFORM_TEX(node_6, _AORGBHeightA),0.0,node_15));
@@ -417,8 +417,8 @@ Shader "Shader Forge/Examples/TessellationDisplacement" {
                 float3 _Normals_var = UnpackNormal(tex2D(_Normals,TRANSFORM_TEX(node_6, _Normals)));
                 float node_15 = 1.0;
                 float4 node_803 = tex2Dlod(_AORGBHeightA,float4(TRANSFORM_TEX(node_6, _AORGBHeightA),0.0,node_15));
-                float4 node_2942 = _Time;
-                float2 node_161 = (node_6+node_2942.g*float2(0.4,0));
+                float4 node_322 = _Time;
+                float2 node_161 = (node_6+node_322.g*float2(0.4,0));
                 float4 _DisplacementR_var = tex2Dlod(_DisplacementR,float4(TRANSFORM_TEX(node_161, _DisplacementR),0.0,node_15));
                 float node_156 = saturate((node_803.a-_DisplacementR_var.r));
                 float3 normalLocal = normalize(lerp(float3(0,0,1),_Normals_var.rgb,node_156));
@@ -547,9 +547,9 @@ Shader "Shader Forge/Examples/TessellationDisplacement" {
                     return o;
                 }
                 void displacement (inout VertexInput v){
-                    float4 node_7647 = _Time;
+                    float4 node_828 = _Time;
                     float2 node_6 = (v.texcoord0*2.0);
-                    float2 node_161 = (node_6+node_7647.g*float2(0.4,0));
+                    float2 node_161 = (node_6+node_828.g*float2(0.4,0));
                     float node_15 = 1.0;
                     float4 _DisplacementR_var = tex2Dlod(_DisplacementR,float4(TRANSFORM_TEX(node_161, _DisplacementR),0.0,node_15));
                     float4 node_803 = tex2Dlod(_AORGBHeightA,float4(TRANSFORM_TEX(node_6, _AORGBHeightA),0.0,node_15));
@@ -690,9 +690,9 @@ Shader "Shader Forge/Examples/TessellationDisplacement" {
                     return o;
                 }
                 void displacement (inout VertexInput v){
-                    float4 node_5250 = _Time;
+                    float4 node_2386 = _Time;
                     float2 node_6 = (v.texcoord0*2.0);
-                    float2 node_161 = (node_6+node_5250.g*float2(0.4,0));
+                    float2 node_161 = (node_6+node_2386.g*float2(0.4,0));
                     float node_15 = 1.0;
                     float4 _DisplacementR_var = tex2Dlod(_DisplacementR,float4(TRANSFORM_TEX(node_161, _DisplacementR),0.0,node_15));
                     float4 node_803 = tex2Dlod(_AORGBHeightA,float4(TRANSFORM_TEX(node_6, _AORGBHeightA),0.0,node_15));
@@ -751,8 +751,8 @@ Shader "Shader Forge/Examples/TessellationDisplacement" {
                 float4 node_798 = tex2D(_AORGBHeightA,TRANSFORM_TEX(node_6, _AORGBHeightA));
                 float node_15 = 1.0;
                 float4 node_803 = tex2Dlod(_AORGBHeightA,float4(TRANSFORM_TEX(node_6, _AORGBHeightA),0.0,node_15));
-                float4 node_5250 = _Time;
-                float2 node_161 = (node_6+node_5250.g*float2(0.4,0));
+                float4 node_2386 = _Time;
+                float2 node_161 = (node_6+node_2386.g*float2(0.4,0));
                 float4 _DisplacementR_var = tex2Dlod(_DisplacementR,float4(TRANSFORM_TEX(node_161, _DisplacementR),0.0,node_15));
                 float node_156 = saturate((node_803.a-_DisplacementR_var.r));
                 float3 node_162 = lerp(float3(0.4117647,0.3826572,0.3602941),(_Diffuse_var.rgb*node_798.rgb),node_156);

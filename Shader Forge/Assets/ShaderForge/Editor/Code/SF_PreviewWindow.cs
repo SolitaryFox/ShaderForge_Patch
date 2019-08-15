@@ -410,7 +410,7 @@ namespace ShaderForge
 
             UpdateRenderPath();
 
-            SetCustomLight(on: true);
+            //SetCustomLight(on: true);
 
             Mesh drawMesh = sphere ? sphereMesh : mesh;
 
