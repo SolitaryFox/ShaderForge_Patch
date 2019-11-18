@@ -355,10 +355,6 @@ namespace ShaderForge
             SF_EditorNodeData ssSpec = TryAddTemplateDynamic("SFN_SkyshopSpec", "Skyshop/" + "Skyshop Specular");
             if (ssSpec != null)
                 ssSpec.MarkAsNewNode();
-
-
-
-
         }
 
 

@@ -114,7 +114,13 @@ namespace ShaderForge {
 		public string n_vertexOffset {
 			get { return mOut.vertexOffset.TryEvaluate(); }
 		}
-		public string n_displacement {
+
+        public string n_vertexNormal
+        {
+            get { return mOut.vertexNormal.TryEvaluate(); }
+        }
+
+        public string n_displacement {
 			get { return mOut.displacement.TryEvaluate(); }
 		}
 		public string n_tessellation {

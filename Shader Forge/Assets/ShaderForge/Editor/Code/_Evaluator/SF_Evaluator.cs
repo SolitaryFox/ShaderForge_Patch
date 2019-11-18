@@ -151,7 +151,11 @@ namespace ShaderForge
                 dependencies.uv1 = true;
                 dependencies.uv2 = true;
             }
+            if (editor.mainNode.vertexNormal.IsConnectedEnabledAndAvailable())
+            {
+                dependencies.NeedFragNormals();
 
+            }
             // Dependencies
             if (ps.catLighting.IsLit() && !IsShadowOrOutlineOrMetaPass() && currentPass != PassType.Deferred)
             {
@@ -2799,6 +2803,12 @@ namespace ShaderForge
                     App("v.vertex.xyz += " + ps.n_vertexOffset + ";");
                 else
                     App("v.vertex.xyz = " + ps.n_vertexOffset + ";");
+            }
+            if (editor.mainNode.vertexNormal.IsConnectedAndEnabled())
+            {
+                //ps.n_vertexNormal
+                var code = string.Format("o.normalDir = UnityObjectToWorldNormal({0});", ps.n_vertexNormal);
+                App(code);
             }
 
             if (dependencies.vert_out_worldPos)

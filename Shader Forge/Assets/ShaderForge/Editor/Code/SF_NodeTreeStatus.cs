@@ -390,8 +390,8 @@ namespace ShaderForge {
 
 
 			// Check if there are any textures in the vertex input
-			texturesInVertShader = HasNodeInput<SFN_Tex2d>( editor.mainNode.vertexOffset ) || HasNodeInput<SFN_Tex2d>( editor.mainNode.outlineWidth );
-			viewDirectionInVertOffset = HasNodeInput<SFN_ViewVector>( editor.mainNode.vertexOffset );
+			texturesInVertShader = HasNodeInput<SFN_Tex2d>( editor.mainNode.vertexOffset ) || HasNodeInput<SFN_Tex2d>( editor.mainNode.outlineWidth ) || editor.mainNode.vertexNormal;
+            viewDirectionInVertOffset = HasNodeInput<SFN_ViewVector>( editor.mainNode.vertexOffset );
 
 
 

@@ -25,8 +25,9 @@ namespace ShaderForge {
 			connectors = new SF_NodeConnector[]{
 				SF_NodeConnector.Create(this,"UVOUT","UV",ConType.cOutput,ValueType.VTv2,false).Outputting(OutChannel.RG),
 				SF_NodeConnector.Create(this,"U","U",ConType.cOutput,ValueType.VTv1).WithColor(Color.red).Outputting(OutChannel.R),
-				SF_NodeConnector.Create(this,"V","V",ConType.cOutput,ValueType.VTv1).WithColor(Color.green).Outputting(OutChannel.G)
-			};
+				SF_NodeConnector.Create(this,"V","V",ConType.cOutput,ValueType.VTv1).WithColor(Color.green).Outputting(OutChannel.G),
+                SF_NodeConnector.Create(this,"W","W",ConType.cOutput,ValueType.VTv1).WithColor(Color.blue).Outputting(OutChannel.B)
+            };
 		}
 
 		public void UpdateIcon() {
