@@ -329,13 +329,13 @@ namespace UnityEditor
             // ShaderInspector.ShaderErrorListUI( s, ShaderUtil.GetShaderErrors( s ), ref this.m_ScrollPosition );
             this.m_ScrollPosition = (Vector2)args[2];
 #else
-              var shaderErrorCount = UnityEditor.ShaderUtil.GetShaderMessageCount(s);
-            //int shaderErrorCount = (int)sutilGetShaderErrorCount.Invoke(null, new object[] { s });
+            //   var shaderErrorCount = UnityEditor.ShaderUtil.GetShaderMessageCount(s);
+            int shaderErrorCount = (int)sutilGetShaderErrorCount.Invoke(null, new object[] { s });
             if (shaderErrorCount < 1)
             {
                 return;
             }
-             UnityEditor.ShaderUtil.GetShaderMessages(s);
+            //  UnityEditor.ShaderUtil.GetShaderMessages(s);
             object[] args = new object[] { s, sutilGetShaderErrors.Invoke(null, new object[] { s }), this.m_ScrollPosition };
             shinspGetErrorListUI.Invoke(null, args);
             // ShaderInspector.ShaderErrorListUI( s, ShaderUtil.GetShaderErrors( s ), ref this.m_ScrollPosition );
