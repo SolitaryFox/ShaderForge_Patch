@@ -46,7 +46,7 @@ namespace ShaderForge {
 		}
 		
 		public override float EvalCPU( int c ) {
-			return Lerp( GetInputData( "B", c ), GetInputData( "B", c ), GetInputData( "T", c ) );
+			return Lerp( GetInputData( "A", c ), GetInputData( "B", c ), GetInputData( "T", c ) );
 		}
 
 		public float Lerp( float a, float b, float t ) {
