@@ -4,3 +4,4 @@ fork from https://github.com/FreyaHolmer/ShaderForge.git
 2.增加了 vertexid 节点方便制作顶点动画  
 3.修复了预览窗口的bug  
 4.不支持 HDRP  LDRP 管线
+5.为transfrom 节点添加了变换点模式
