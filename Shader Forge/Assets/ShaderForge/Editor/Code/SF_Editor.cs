@@ -276,6 +276,7 @@ namespace ShaderForge
             AddTemplate(typeof(SFN_Transpose), catVecOps + "Transpose");
             AddTemplate(typeof(SFN_VectorProjection), catVecOps + "Vector Projection");
             AddTemplate(typeof(SFN_VectorRejection), catVecOps + "Vector Rejection");
+            AddTemplate(typeof(SFN_VectorRotation), catVecOps + "Vector Rotation");
 
 
             string catUvOps = "UV Operations/";
