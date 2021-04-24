@@ -12,8 +12,8 @@ public class SFN_VectorRotation : SF_Node_Arithmetic
         base.shaderGenMode = ShaderGenerationMode.SimpleFunction;
         connectors = new SF_NodeConnector[]{
                 SF_NodeConnector.Create(this,"OUT","",ConType.cOutput,ValueType.VTv3,false),
-                SF_NodeConnector.Create(this,"A","Normal Dir",ConType.cInput,ValueType.VTv3,false).SetRequired(true),
-                SF_NodeConnector.Create(this,"B","Angle",ConType.cInput,ValueType.VTv3,false).SetRequired(true),
+                SF_NodeConnector.Create(this,"A","N",ConType.cInput,ValueType.VTv3,false).SetRequired(true),
+                SF_NodeConnector.Create(this,"B","A",ConType.cInput,ValueType.VTv3,false).SetRequired(true),
             };
     }
 
